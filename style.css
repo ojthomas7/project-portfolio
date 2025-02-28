@@ -1,0 +1,291 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dce0e3;
+}
+
+header {
+    background-color: #233f6e;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: xxx-large;
+    background-color: #233f6e;
+    color: #dce0e3;
+}
+
+body.animate h1 {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+.horizontal-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+    margin-right: 20px;
+    font-size: x-large;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: 50% 100%;
+    color: #dce0e3;
+}
+
+body.animate .horizontal-list li {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+.horizontal-list li:hover {
+    transform: translateY(-5px);
+}
+
+.horizontal-list a {
+    color: #dce0e3;
+    text-decoration: none;
+}
+
+.horizontal-line {
+    width: 95%;
+    height: 2.5px;
+    background-color: #000;
+    margin: 20px auto;
+}
+
+body.animate .horizontal-line {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+/* Primary Dropdown Styling */
+.project_type {
+    padding-left: 40px;
+    padding-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: xx-large;
+    background-color: #dce0e3;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: 50% 100%;
+    color: #000;
+}
+
+body.animate .project_type {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+.project_type:hover {
+    transform: translateY(-5px);
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.content {
+    display: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.toggle-checkbox:checked + .project_type + .content {
+    display: block;
+}
+
+/* Nested Dropdown Styling */
+.nested-dropdown {
+    margin-bottom: 20px;
+}
+
+.nested-project-type {
+    padding-left: 60px;
+    padding-top: 15px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: x-large;
+    background-color: #dce0e3;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: 50% 100%;
+    color: #000;
+}
+
+.nested-project-type:hover {
+    transform: translateY(-5px);
+}
+
+.nested-toggle-checkbox {
+    display: none;
+}
+
+.project-list {
+    display: none;
+    list-style-type: none;
+    padding-left: 80px;
+    margin-top: 10px;
+}
+
+.nested-toggle-checkbox:checked + .nested-project-type + .project-list {
+    display: block;
+}
+
+/* Project Link Styling */
+.project-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-link:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: large;
+    color: #000;
+}
+
+.project-description {
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: medium;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Indicator Styling (Thin Arrow) */
+.indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(135deg); /* Points downward initially */
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+
+/* Rotate indicator 180 degrees when primary dropdown is open */
+.toggle-checkbox:checked + .project_type .indicator {
+    transform: rotate(-45deg); /* Points upward */
+}
+
+/* Rotate indicator 180 degrees when nested dropdown is open */
+.nested-toggle-checkbox:checked + .nested-project-type .indicator {
+    transform: rotate(-45deg); /* Points upward */
+}
+
+/* Project Page Styling */
+.project-section {
+    padding: 40px;
+    background-color: #dce0e3;
+}
+
+.project-page-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: xx-large;
+    color: #000;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+    text-align: center;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-page-image {
+    width: 100%;
+    object-fit: cover;
+    margin-right: 40px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards 0.2s;
+}
+
+.project-text {
+    text-align: center;
+    max-width: 600px;
+}
+
+.project-text p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: x-large;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+/* Sequential fade-in for project text paragraphs */
+.project-text p:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.project-text p:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+/* Inline Repository Link Styling */
+.inline-repo-link {
+    color: #233f6e;
+    text-decoration: underline;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: x-large;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.inline-repo-link:hover {
+    transform: translateY(-5px);
+}
