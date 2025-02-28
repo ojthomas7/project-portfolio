@@ -244,7 +244,7 @@ body.animate .project_type {
 }
 
 .project-page-image {
-    width: 100%;
+    width: 300px;
     object-fit: cover;
     margin-right: 40px;
     opacity: 0;
@@ -256,7 +256,22 @@ body.animate .project_type {
     max-width: 600px;
 }
 
+.about-text {
+    text-align: left;
+    max-width: 600px;
+}
+
 .project-text p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: x-large;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+.about-text p {
     font-family: 'Playfair Display', serif;
     font-weight: 300;
     font-size: x-large;
