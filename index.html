@@ -33,83 +33,90 @@
         <input type="checkbox" id="quantum-computing-checkbox" class="toggle-checkbox">
         <label for="quantum-computing-checkbox" class="project_type">Quantum Computing <span class="indicator"></span></label>
         <div class="content">
-            <!-- Nested Dropdown: Quantum Algorithms -->
-            <div class="nested-dropdown">
-                <input type="checkbox" id="quantum-algorithms-checkbox" class="nested-toggle-checkbox">
-                <label for="quantum-algorithms-checkbox" class="nested-project-type">Quantum Error Correction <span class="indicator"></span></label>
-                <ul class="project-list">
-                    <li>
-                        <a href="5-qubit.html" class="project-link">
-                            <img src="5qubit.png" alt="Bit Flip Correction" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">The 5-Qubit Stabiliser Code</span>
-                                <p class="project-description">The most compact QEC code for encoding a single logical qubit.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="shor.html" class="project-link">
-                            <img src="shor.jpeg" alt="Shor's Algorithm" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">The Shor Code</span>
-                                <p class="project-description">9-qubit QEC: combining bit-flip and phase-flip protection</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="3-bitflip.html" class="project-link">
-                            <img src="3qubitcircuit.jpeg" alt="Bit Flip Correction" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">3-Qubit Codes: Bit-Flip Correction</span>
-                                <p class="project-description">Introductory QEC: the three qubit repetition code for detecting and decoding bit-flip errors.</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Nested Dropdown: Quantum Circuits -->
-            <div class="nested-dropdown">
-                <input type="checkbox" id="quantum-circuits-checkbox" class="nested-toggle-checkbox">
-                <label for="quantum-circuits-checkbox" class="nested-project-type">Introductory Quantum Circuits and Algorithms <span class="indicator"></span></label>
-                <ul class="project-list">
-                    <li>
-                        <a href="grover.html" class="project-link">
-                            <img src="grover.jpeg" alt="Grover's Algorithm" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">Grover's Algorithm</span>
-                                <p class="project-description">Implementation of Grover's quantum search algorithm.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="deutsch.html" class="project-link">
-                            <img src="deutch.jpeg" alt="Deutsch's Algorithm" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">Deutsch's Algorithm</span>
-                                <p class="project-description">Exploring Deutsch’s quantum algorithm for function parity.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="teleportation.html" class="project-link">
-                            <img src="teleportation.jpeg" alt="Quantum Teleportation" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">Quantum Teleportation</span>
-                                <p class="project-description">Circuit design for quantum state teleportation.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="bell-state.html" class="project-link">
-                            <img src="Bloch_sphere.jpeg" alt="Bell State" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">The Bell State</span>
-                                <p class="project-description">Creating and analyzing Bell states in quantum circuits.</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <label class="nested-project-type">Quantum Circuit Optimisation</label>
+            <div class="nested-horizontal-line"></div>
+            <ul class="project-list">
+                <li>
+                    <a href="tket-optimiser.html" class="project-link">
+                        <img src="forest.jpeg" alt="5-Qubit Stabilizer Code" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Machine Learning Based Quantum Circuit Optimisation</span>
+                            <p class="project-description">Training RandomForestClassifier on TKET quantum circuits to reccomend optimisation passes.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <label class="nested-project-type">Quantum Error Correction</label>
+            <div class="nested-horizontal-line"></div>
+            <ul class="project-list">
+                <li>
+                    <a href="5-qubit.html" class="project-link">
+                        <img src="5qubit.png" alt="5-Qubit Stabilizer Code" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">The 5-Qubit Stabilizer Code</span>
+                            <p class="project-description">The most compact QEC code for encoding a single logical qubit.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="shor.html" class="project-link">
+                        <img src="shor.jpeg" alt="Shor's Algorithm" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">The Shor Code</span>
+                            <p class="project-description">9-qubit QEC: combining bit-flip and phase-flip protection</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="bit_flip.html" class="project-link">
+                        <img src="3qubitcircuit.jpeg" alt="Bit Flip Correction" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">3-Qubit Codes: Bit-Flip Correction</span>
+                            <p class="project-description">Introductory QEC: the three qubit repetition code for detecting and decoding bit-flip errors.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <label class="nested-project-type">Introductory Quantum Circuits and Algorithms</label>
+            <div class="nested-horizontal-line"></div>
+            <ul class="project-list">
+                <li>
+                    <a href="grover.html" class="project-link">
+                        <img src="grover.jpeg" alt="Grover's Algorithm" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Grover's Algorithm</span>
+                            <p class="project-description">Implementation of Grover's quantum search algorithm.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="deutsch.html" class="project-link">
+                        <img src="deutch.jpeg" alt="Deutsch's Algorithm" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Deutsch's Algorithm</span>
+                            <p class="project-description">Exploring Deutsch’s quantum algorithm for function parity.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="teleportation.html" class="project-link">
+                        <img src="teleportation.jpeg" alt="Quantum Teleportation" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Quantum Teleportation</span>
+                            <p class="project-description">Circuit design for quantum state teleportation.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="bell-state.html" class="project-link">
+                        <img src="Bloch_sphere.jpeg" alt="Bell State" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">The Bell State</span>
+                            <p class="project-description">Creating and analyzing Bell states in quantum circuits.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
     <div class="horizontal-line"></div>
@@ -119,47 +126,41 @@
         <input type="checkbox" id="machine-learning-checkbox" class="toggle-checkbox">
         <label for="machine-learning-checkbox" class="project_type">Machine Learning <span class="indicator"></span></label>
         <div class="content">
-            <!-- Nested Dropdown: Quantum ML -->
-            <div class="nested-dropdown">
-                <input type="checkbox" id="quantum-ml-checkbox" class="nested-toggle-checkbox">
-                <label for="quantum-ml-checkbox" class="nested-project-type">Quantum Machine Learning <span class="indicator"></span></label>
-                <ul class="project-list">
-                    <li>
-                        <a href="pinn.html" class="project-link">
-                            <img src="5_4_0.png" alt="PINN Classifier" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">PINN: (n, l, m) Quantum State Classifier</span>
-                                <p class="project-description">Physics-informed neural network for quantum states.</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Nested Dropdown: Classical ML -->
-            <div class="nested-dropdown">
-                <input type="checkbox" id="classical-ml-checkbox" class="nested-toggle-checkbox">
-                <label for="classical-ml-checkbox" class="nested-project-type">Classical Machine Learning <span class="indicator"></span></label>
-                <ul class="project-list">
-                    <li>
-                        <a href="orbital2.html" class="project-link">
-                            <img src="5_1_0.png" alt="Improved Orbital Classification" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">Improved Electron Orbital Classification</span>
-                                <p class="project-description">Enhanced ML model for electron orbitals.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="orbital.html" class="project-link">
-                            <img src="4_2_2.png" alt="Orbital Classification" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">Classifying Electron Orbitals with TensorFlow</span>
-                                <p class="project-description">TensorFlow-based orbital classification.</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <label class="nested-project-type">Quantum Machine Learning</label>
+            <div class="nested-horizontal-line"></div>
+            <ul class="project-list">
+                <li>
+                    <a href="pinn.html" class="project-link">
+                        <img src="5_4_0.png" alt="PINN Classifier" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">PINN: (n, l, m) Quantum State Classifier</span>
+                            <p class="project-description">Physics-informed neural network for quantum states.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <label class="nested-project-type">Classical Machine Learning</label>
+            <div class="nested-horizontal-line"></div>
+            <ul class="project-list">
+                <li>
+                    <a href="orbital2.html" class="project-link">
+                        <img src="5_1_0.png" alt="Improved Orbital Classification" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Improved Electron Orbital Classification</span>
+                            <p class="project-description">Enhanced ML model for electron orbitals.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="orbital.html" class="project-link">
+                        <img src="4_2_2.png" alt="Orbital Classification" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Classifying Electron Orbitals with TensorFlow</span>
+                            <p class="project-description">TensorFlow-based orbital classification.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
     <div class="horizontal-line"></div>
@@ -169,65 +170,59 @@
         <input type="checkbox" id="other-checkbox" class="toggle-checkbox">
         <label for="other-checkbox" class="project_type">Other <span class="indicator"></span></label>
         <div class="content">
-            <!-- Nested Dropdown: Independent Projects -->
-            <div class="nested-dropdown">
-                <input type="checkbox" id="independent-projects-checkbox" class="nested-toggle-checkbox">
-                <label for="independent-projects-checkbox" class="nested-project-type">Independent Projects <span class="indicator"></span></label>
-                <ul class="project-list">
-                    <li>
-                        <a href="web_scraping.html" class="project-link">
-                            <img src="pltr.jpeg" alt="Web Scraping" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">Web Scraping with Selenium and BeautifulSoup</span>
-                                <p class="project-description">Automated data extraction from websites.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="intern.html" class="project-link">
-                            <img src="hypercube.jpeg" alt="Internship" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">Research Internship - Python for Hardware Automation</span>
-                                <p class="project-description">Python automation for hardware control.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="galaxy_classification.html" class="project-link">
-                            <img src="tile3.jpeg" alt="Galaxy Classification" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">Galaxy Classification using CNNs</span>
-                                <p class="project-description">Convolutional neural networks for galaxy types.</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Nested Dropdown: Final Year Projects -->
-            <div class="nested-dropdown">
-                <input type="checkbox" id="final-year-checkbox" class="nested-toggle-checkbox">
-                <label for="final-year-checkbox" class="nested-project-type">Final Year BSc Projects <span class="indicator"></span></label>
-                <ul class="project-list">
-                    <li>
-                        <a href="BOS.html" class="project-link">
-                            <img src="tile1.jpeg" alt="BOS Analysis" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">Background Oriented Schlieren Analysis</span>
-                                <p class="project-description">Optical flow analysis for fluid dynamics.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="simulation.html" class="project-link">
-                            <img src="tile2.jpeg" alt="Simulation" class="project-image">
-                            <div class="project-details">
-                                <span class="project-title">Simulating Astrophysical Convection</span>
-                                <p class="project-description">Numerical simulation of stellar convection.</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <label class="nested-project-type">Independent Projects</label>
+            <div class="nested-horizontal-line"></div>
+            <ul class="project-list">
+                <li>
+                    <a href="web_scraping.html" class="project-link">
+                        <img src="pltr.jpeg" alt="Web Scraping" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Web Scraping with Selenium and BeautifulSoup</span>
+                            <p class="project-description">Automated data extraction from websites.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="intern.html" class="project-link">
+                        <img src="hypercube.jpeg" alt="Internship" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Research Internship - Python for Hardware Automation</span>
+                            <p class="project-description">Python automation for hardware control.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="galaxy_classification.html" class="project-link">
+                        <img src="tile3.jpeg" alt="Galaxy Classification" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Galaxy Classification using CNNs</span>
+                            <p class="project-description">Convolutional neural networks for galaxy types.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <label class="nested-project-type">Final Year BSc Projects</label>
+            <div class="nested-horizontal-line"></div>
+            <ul class="project-list">
+                <li>
+                    <a href="BOS.html" class="project-link">
+                        <img src="tile1.jpeg" alt="BOS Analysis" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Background Oriented Schlieren Analysis</span>
+                            <p class="project-description">Optical flow analysis for fluid dynamics.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="simulation.html" class="project-link">
+                        <img src="tile2.jpeg" alt="Simulation" class="project-image">
+                        <div class="project-details">
+                            <span class="project-title">Simulating Astrophysical Convection</span>
+                            <p class="project-description">Numerical simulation of stellar convection.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
     <div class="horizontal-line"></div>
@@ -237,8 +232,8 @@
         // Always apply fade-in animation on load
         document.body.classList.add('animate');
 
-        // Restore dropdown states
-        const checkboxes = document.querySelectorAll('.toggle-checkbox, .nested-toggle-checkbox');
+        // Restore dropdown states for main project types only
+        const checkboxes = document.querySelectorAll('.toggle-checkbox');
         checkboxes.forEach(checkbox => {
             const savedState = localStorage.getItem(checkbox.id);
             if (savedState === 'true') {
@@ -248,7 +243,7 @@
     });
 
     // Save dropdown states when changed
-    document.querySelectorAll('.toggle-checkbox, .nested-toggle-checkbox').forEach(checkbox => {
+    document.querySelectorAll('.toggle-checkbox').forEach(checkbox => {
         checkbox.addEventListener('change', () => {
             localStorage.setItem(checkbox.id, checkbox.checked);
         });

@@ -117,11 +117,7 @@ body.animate .project_type {
     display: block;
 }
 
-/* Nested Dropdown Styling */
-.nested-dropdown {
-    margin-bottom: 20px;
-}
-
+/* Nested Project Type Styling (Subtitles) */
 .nested-project-type {
     padding-left: 60px;
     padding-top: 15px;
@@ -129,30 +125,23 @@ body.animate .project_type {
     font-weight: 300;
     font-size: x-large;
     background-color: #dce0e3;
-    cursor: pointer;
     display: block;
-    transition: transform 0.2s ease-in-out;
-    transform-origin: 50% 100%;
     color: #000;
 }
 
-.nested-project-type:hover {
-    transform: translateY(-5px);
+/* Thin Horizontal Line Under Nested Project Types */
+.nested-horizontal-line {
+    width: 90%;
+    height: 1px;
+    background-color: #000;
+    margin: 5px auto 15px auto;
 }
 
-.nested-toggle-checkbox {
-    display: none;
-}
-
+/* Project List Styling */
 .project-list {
-    display: none;
     list-style-type: none;
     padding-left: 80px;
     margin-top: 10px;
-}
-
-.nested-toggle-checkbox:checked + .nested-project-type + .project-list {
-    display: block;
 }
 
 /* Project Link Styling */
@@ -212,11 +201,6 @@ body.animate .project_type {
 
 /* Rotate indicator 180 degrees when primary dropdown is open */
 .toggle-checkbox:checked + .project_type .indicator {
-    transform: rotate(-45deg); /* Points upward */
-}
-
-/* Rotate indicator 180 degrees when nested dropdown is open */
-.nested-toggle-checkbox:checked + .nested-project-type .indicator {
     transform: rotate(-45deg); /* Points upward */
 }
 
